@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="bannerVideo" id="slideShow">
+            <video src="./img/video1.mp4" autoplay muted loop class="active"></video>
+            <video src="./img/video2.mp4" autoplay muted loop></video>
+            <video src="./img/video3.mp4" autoplay muted loop></video>
+            <video src="./img/video4.mp4" autoplay muted loop></video>
+        </div>
+        <div class="container">
+            <header id="navbar">
+                <a href="#" class="logo">World</a>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Destination</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+                <span class="menuIcon" onclick="toggleMenu()"></span>
+            </header>
+            <div class="content">
+                <div class="bannerText" id="slideShowText">
+                    <div class="active">
+                        <h2>Tokyo</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi similique doloribus pariatur nulla unde provident neque sunt officia enim, perspiciatis culpa dolorem temporibus architecto necessitatibus itaque et rerum dolor nihil.</p>
+                    </div>
+                    <div>
+                        <h2>Paris</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero reprehenderit quae in a quidem, quia corporis nisi doloremque similique, recusandae voluptates vel. Rem beatae corporis dolorem accusantium qui rerum laboriosam!</p>
+                    </div>
+                    <div>
+                        <h2>Egypt</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem iure adipisci sint nesciunt ipsam dignissimos minima ex cum, repellendus exercitationem. Dicta quo corrupti ea doloremque? Nostrum voluptatibus mollitia nihil molestias!</p>
+                    </div>
+                    <div>
+                        <h2>Maldives</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque fugiat voluptatibus, eius magni voluptates consequatur odit facilis, blanditiis totam accusamus cum quam possimus aliquid, vel deserunt est excepturi ab nihil!</p>
+                    </div>
+                </div>
+            </div>
+            <ul class="controls">
+                <li><img src="/img/left.png" alt="Left" onclick="prevSlide();prevSlideText();"></li>
+                <li><img src="img/right.png" alt="Right" onclick="nextSlide();nextSlideText();"></li>
+            </ul>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
